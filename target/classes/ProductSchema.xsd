@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.example.org/ProductSchema"
+           xmlns:tns="http://www.example.org/ProductSchema"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="Product">
+        <xs:sequence>
+            <xs:element name="id" type="xs:long"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="price" type="xs:double"/>
+            <xs:element name="image" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ProductData">
+        <xs:sequence>
+            <xs:element name="product1" type="tns:Product"/>
+            <xs:element name="product2" type="tns:Product"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="ProductDataSet">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ProductData" type="tns:ProductData" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

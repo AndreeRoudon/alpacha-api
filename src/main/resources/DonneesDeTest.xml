@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:ProductDataSet xmlns:tns="http://www.example.org/ProductSchema"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://www.example.org/ProductSchema ProductSchema.xsd">
+    <tns:ProductData>
+        <tns:product1>
+            <tns:id>1</tns:id>
+            <tns:name>pull violet</tns:name>
+            <tns:price>29.99</tns:price>
+            <tns:image>image</tns:image>
+        </tns:product1>
+        <tns:product2>
+            <tns:id>2</tns:id>
+            <tns:name>pull rouge</tns:name>
+            <tns:price>39.99</tns:price>
+            <tns:image>image2</tns:image>
+        </tns:product2>
+    </tns:ProductData>
+    <tns:ProductData>
+        <tns:product1>
+            <tns:id>3</tns:id>
+            <tns:name>pull bleu</tns:name>
+            <tns:price>49.99</tns:price>
+            <tns:image>image3</tns:image>
+        </tns:product1>
+        <tns:product2>
+            <tns:id>4</tns:id>
+            <tns:name>pull vert</tns:name>
+            <tns:price>59.99</tns:price>
+            <tns:image>image4</tns:image>
+        </tns:product2>
+    </tns:ProductData>
+</tns:ProductDataSet>
